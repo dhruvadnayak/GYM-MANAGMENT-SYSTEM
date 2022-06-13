@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>FAQs</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+        <style>
+
+.faq-container{
+    max-width: 700px;
+    margin: 0 auto;
+    /* background-color: #aadbf1; */
+}
+/* .faq-container .question-container{
+    box-shadow: 0 4px 8px -3px rgba(0,0,0.3);
+} */
+ h2{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 4px 32px;
+     font-size: 28px;
+     font-family: 'Poppins', sans-serif;
+     background-color: #85dcb8;
+     border-radius: 20px;
+     padding-top: 36px;
+     padding-bottom: 36px;
+     color: black;
+}
+.faq-container .faq-header{
+    display: flex;
+    background: #bee8fb;
+    border-radius: 20px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+/* .faq-container .faq-header.open,
+.faq-container .faq-header.close{
+    position: absolute;
+    right: 0;
+    padding: 0 32px;
+    font-size: 22px;
+    font-weight: bold;
+    transform: translateY(-8px);
+    opacity: 0;
+    transition: all 500ms;
+} */
+
+/* .faq-container .faq-header.open.active,
+.faq-container .faq-header.close.active{
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.faq-container .faq-header h3{
+    font-size: 20px;
+    padding: 0 32px;
+}
+.faq-container .content{
+    padding: 0 32px;
+    background: #fdfffc;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+
+}
+.faq-container .content.active{
+    max-height: 600px;
+}
+#content{
+    background-color: #e3f6ee;
+}
+        </style>
+        </head>
+        <body>
+            <div data-aos="zoom-in">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <!--complete table -->
+            <div class="faq-container">
+
+            <!--for complete questioning part-->
+                <div class="questions-container">
+                    <!--for each question with answer-->
+                    <div class="content-container">
+                        <!--for question only-->
+                        <div class="faq-header" data-aos="zoom-out">
+                            <h3>What Is the Best Way to Lose Fat?</h3>
+
+                            <!-- <span class="open active"></span>
+                            <span class="close"></span> -->
+                        </div>
+                        <!--for answer part-->
+                            <div class="content" data-aos="zoom-in">
+                                <p> 
+                                    The simple (and complex) answer is that there is no “best way” to lose fat. Each client will respond differently to a training program. However, there are some principles fitness professionals can apply when designing their clients’ programs. Activities that incorporate many muscle groups and are weight bearing use more calories per minute and are therefore better suited for fat loss than non-weight-bearing activities that do not use many muscles.  </p>
+
+                            </div>
+                    
+                    </div>
+                        <div class="content-container">
+                            <div class="faq-header" data-aos="zoom-in">
+                                    <h3>What Is My Target Heart Rate?</h3>
+                                    <!-- <span class="open active"></span>
+                                    <span class="close"></span> -->
+                            </div>
+                                    <div class="content" id="content" data-aos="zoom-in">
+                                        <p>Target heart rate—the heart rate range used to determine the desired intensity of an activity—will differ depending on the goal of the workout. You can calculate target heart rate using a percentage of your client’s heart rate maximum (HRmax), which can be predicted by subtracting your client’s age from 220, or by measuring your client’s heart rate while he or she performs a maximum exercise test.  </p>
+                                    </div>
+                            
+                        </div>
+
+                            <div class="content-container">
+                                <div class="faq-header" data-aos="zoom-out">
+                                    <h3>Why Are My Muscles Sore After a Workout?</h3>
+                                    <!-- <span class="open active"></span>
+                                    <span class="close"></span> -->
+                                </div>
+                                    <div class="content" data-aos="zoom-in">
+                                        <p>Soreness results from high force production when an exercise is new or a load is greater than normal. Furthermore, eccentric muscle contractions (in which the muscle lengthens, as when lowering a weight) cause more soreness in the days following the workout than either isometric contractions (in which the muscle does not change length, as when holding a weight) or concentric contractions (in which the muscle shortens, as when lifting a weight). </p>
+                                    </div>
+                            
+                            </div>
+
+                            <div class="content-container">
+                                <div class="faq-header" data-aos="zoom-in">
+                                    <h3>How Do I Get Rid of These Flabby Arms?</h3>
+                                    <!-- <span class="open active"></span>
+                                    <span class="close"></span> -->
+                                </div>
+                                    <div class="content" id="content" data-aos="zoom-in">
+                                        <p>One of the biggest exercise myths is that you can lose fat in an area of the body by strength training or exercising that specific body part. The truth is that “spot reducing” and “spot toning” do not work, because we cannot dictate from where our bodies will decide to oxidize fat, nor can we change fat into muscle. </p>
+                                    </div>
+                            
+                            </div>
+                </div>
+            </div>
+            <script>
+
+const faqheaders = document.querySelectorAll(".faq-container .faq-header");
+
+faqheaders.forEach((header, i) => {
+  header.addEventListener("click", () => {
+    header.nextElementSibling.classList.toggle("active");
+
+    const open = header.querySelector(".open");
+    const close = header.querySelector(".close");
+
+    if (header.nextElementSibling.classList.contains("active")) {
+      open.classList.remove("active");
+      close.classList.add("active");
+    } else {
+      open.classList.add("active");
+      close.classList.remove("active");
+    }
+  });
+});
+            </script>
+             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+             <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+             <!-- our aos data -->
+             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+             <script>
+             AOS.init({
+                 offset: 0,
+                 duration: 3000,
+             });
+             </script>
+
+        </body>
+        </html>

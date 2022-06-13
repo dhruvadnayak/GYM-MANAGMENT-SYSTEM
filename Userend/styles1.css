@@ -1,0 +1,216 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* TOP PART */
+
+
+.head{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    background-color: #85dcb8;
+    overflow: hidden;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+.wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000px;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999px;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998px;
+    opacity: 0.2;
+    animation-delay: -5s;
+    bottom: 15px;
+}
+.wave.wave4{
+    animation: animate2 15s linear infinite;
+    z-index: 997px;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate{
+    0%{
+        background-position-x:0 ;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2{
+    0%{
+        background-position-x:0 ;
+    }
+    100%{
+        background-position-x:-1000px;
+    }
+}
+.zumba{
+    float: right;
+    padding-left: 30px;
+}
+.body-foot{
+    padding:25px,25px;
+}
+.title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    padding-left: 20px;
+}
+.p{
+    padding-left: 10px;
+}
+a{
+   
+    text-decoration: none;
+    padding: 25px 25px;
+    color:whitesmoke;
+    cursor: pointer;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-end;
+   padding-left: 15px;
+   padding-top: 15px;
+    color:whitesmoke;
+}
+img{
+    float: right;
+}
+.log{
+   
+    margin-top: 63px;
+    margin-left: 410px;
+
+    border-width: 0;
+    border-radius: 11px;
+    font-family:'Poppins', sans-serif ;
+    color: #000000;
+    font-size: 20px;
+    background: #eff2f9;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .log:hover {
+    text-decoration: none;
+  }  
+
+
+/*MIDDLE PART */
+
+
+.body-foot{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.mid{
+    padding: 15px;
+    float: right;
+    width:50%;
+}
+.span{
+    color: #85dcb8;
+}
+#mid{
+    background-color: #FBF5F1;
+    border-radius: 20px;
+}
+.mid-img{
+    clear: right;
+    float: left;
+}
+
+/*JOIN US*/
+
+.join{
+  
+    padding-top: 100px;
+    padding-bottom: 100px;
+   background-color: #eff2f9;
+   border-radius: 20px;
+    text-align: center;
+    clear: left;
+
+}
+.btn-join{
+    border-width: 0;
+   
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    background: #f1b571;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Client Detail Section*/
+
+  .serve{
+      clear: left;
+     
+      text-align: center;
+  }
+  .tools{
+    text-align: center;
+      float: left;
+      width: 10%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #dff8ed;
+      border-radius: 15px;
+      margin: 30px;
+  }
+  #tool-1{
+      margin-left: 380px;
+  }
+  #tools{
+   padding: 10px;
+  }
+/*footer section of main page*/
+
+.last{
+    margin-top: 30px;
+    clear: left;
+    background-color: #eff2f9;
+    border-radius: 20px;
+    text-align: center;
+}
+.foot{
+    padding-left: 40px;
+    padding-top: 35px;
+}
+.copy{
+    padding-bottom: 35px;
+    padding-left: 39px;
+}

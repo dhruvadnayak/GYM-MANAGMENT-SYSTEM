@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="login.css">
+    
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="hero">
+    <div class="form-box" data-aos="zoom-out">
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="togggle-btn" onclick="Login()">Log In</button>
+        <button type="button" class="togggle-btn" onclick="Signup()">Sign Up</button>
+        </div>
+        <form id="Login" class="input-group">
+             <input type="text" id="login-name-input" placeholder="User Name" required>
+
+             <input type="password" id="login-password-input" placeholder="Enter Password" required>
+
+                 <input type="checkbox" class="check-box"><span>Remember Password</span>
+                 
+               
+
+
+                         <button type="submit" class="submit-login-btn" ><a href="index.html">Log In</a></button>
+        </form>
+        <form id="Signup"class="input-group">
+
+            <input type="text" id="signup-name-input" placeholder="User Name" required>
+            
+            <input type="email"id="signup-email-input" placeholder="Email Id" required>
+
+            <input type="password" id="signup-password-input" placeholder="Enter Password" required>
+
+            <input type="text" id="signup-gender-input" placeholder="Enter Gender" required>
+
+            <input type="text" id="signup-contact-input" placeholder="Enter Contact Number" required>
+
+             <!-- <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span> -->
+
+                        <button  type ="button" class="submit-signup-btn"><a href="index.html">Sign Up</a></button>
+       </form>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<!-- our aos data -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+    offset: 0,
+    duration: 3000,
+});
+</script>
+<script>
+    
+    var x = document.getElementById("Login");
+    var y = document.getElementById("Signup");
+    var z = document.getElementById("btn");
+
+    function Signup(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function Login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+</script>
+
+
+
+<script src="login.js"> </script>
+<script src="user.js"></script>
+</body>
+
+</html>

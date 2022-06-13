@@ -1,0 +1,68 @@
+main {
+  
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 20px;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    background-color: #dff8ed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+table{
+    margin: 50px auto;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 20px;
+}
+.middle{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+#search-input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border-width: 0.5px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    margin-left: 5px
+}
+
+
+#search-user-btn{
+    border-width: 0;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 11px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    background: #f1b571;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.delete-btn{
+    border-width: 0;
+    /* margin-top: 30px; */
+    border-radius: 11px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    background: #f1b571;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
